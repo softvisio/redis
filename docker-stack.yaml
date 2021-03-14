@@ -1,0 +1,40 @@
+#!/usr/bin/env -S docker stack deploy --with-registry-auth redis -c
+
+version: "3.9"
+
+# NOTE deploy
+# docker stack deploy --with-registry-auth -c docker-stack.yaml redis
+
+services:
+  redis:
+    image: softvisio/redis
+
+    deploy:
+      replicas: 1
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - "node.labels.redis == true"
+
+    networks: [private]
+
+    volumes:
+      - { type: volume, source: redis, target: /var/lib/redis }
+
+    init: true
+    stop_grace_period: 5m
+    shm_size: 1g
+
+    build:
+      context: .
+
+networks:
+  private: { external: true }
+
+volumes:
+  redis: { name: "redis" }
+
+x-build:
+  default_tag: latest
+  # auto_tags: [main, devel, latest]
+  # tags_mapping: { main: latest }
