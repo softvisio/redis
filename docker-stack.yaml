@@ -22,8 +22,8 @@ services:
       - { published: 6379, target: 6379 }
 
     volumes:
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1024000000 } }
       - { type: volume, source: redis, target: /var/lib/redis }
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1g } }
 
     init: true
     stop_grace_period: 5m
