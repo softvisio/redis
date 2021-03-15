@@ -1,3 +1,9 @@
+## 1.2.0 (2021-03-15)
+
+### Raw commits log
+
+-   redis config added;
+
 ## 1.1.0 (2021-03-15)
 
 ### Raw commits log
