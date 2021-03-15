@@ -7,7 +7,7 @@ version: "3.9"
 
 services:
   redis:
-    image: softvisio/redis
+    image: softvisio/redis:main
 
     deploy:
       replicas: 1
@@ -23,13 +23,10 @@ services:
 
     volumes:
       - { type: volume, source: redis, target: /var/lib/redis }
-
-    tmpfs:
-      - /dev/shm:size=512M
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1g } }
 
     init: true
     stop_grace_period: 5m
-    # shm_size: 1g
 
     build:
       context: .
