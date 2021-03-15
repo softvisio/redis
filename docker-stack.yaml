@@ -24,9 +24,12 @@ services:
     volumes:
       - { type: volume, source: redis, target: /var/lib/redis }
 
+    tmpfs:
+      - /dev/shm:size=512M
+
     init: true
     stop_grace_period: 5m
-    shm_size: 1g
+    # shm_size: 1g
 
     build:
       context: .

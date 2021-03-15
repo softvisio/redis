@@ -3,7 +3,8 @@ FROM softvisio/core
 HEALTHCHECK NONE
 
 RUN \
-    dnf install -y redis \
+    echo "vm.overcommit_memory = 1" >> /etc/sysctl.conf \
+    && dnf install -y redis \
     \
     # install deps
     && npm i --unsafe --only=prod \
