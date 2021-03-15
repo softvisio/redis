@@ -18,17 +18,23 @@ services:
         constraints:
           - "node.labels.redis == true"
 
+    configs:
+      - { source: .config.local.yaml, target: /var/local/package/.config.local.yaml }
+
     networks: [private]
 
     ports:
       - { published: 6379, target: 6379 }
 
     volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1024000000 } }
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: redis, target: /var/lib/redis }
 
     build:
       context: .
+
+configs:
+  .config.local.yaml: { file: .config.local.yaml }
 
 networks:
   private: { external: true }
