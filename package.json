@@ -1,5 +1,5 @@
 {
-    "name": "@softvisio/redis",
+    "name": "redis",
     "version": "1.0.0",
     "private": true,
     "description": "Redis wrapper",
