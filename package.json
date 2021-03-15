@@ -25,6 +25,9 @@
     "scripts": {
         "lint": "softvisio-cli lint"
     },
+    "dependencies": {
+        "@softvisio/core": "^2.6.0"
+    },
     "lint": [
         "*.*",
         "bin/**",
