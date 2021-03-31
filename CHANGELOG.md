@@ -1,3 +1,9 @@
+## 1.2.4 (2021-03-31)
+
+### Raw commits log
+
+-   lint pattern updated;
+
 ## 1.2.3 (2021-03-15)
 
 ### Raw commits log
