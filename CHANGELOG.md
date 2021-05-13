@@ -1,3 +1,12 @@
+## 1.2.7 (2021-05-13)
+
+### Raw commits log
+
+-   env mode accessors added;
+-   env read -> readConfig;
+-   env read -> readConfigs;
+-   imports updated;
+
 ## 1.2.6 (2021-05-02)
 
 ### Raw commits log
