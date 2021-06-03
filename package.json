@@ -7,14 +7,14 @@
         "softvisio",
         "redis"
     ],
-    "homepage": "https://bitbucket.org/softvisio/redis",
+    "homepage": "https://github.com/softvisio/redis",
     "bugs": {
-        "url": "https://bitbucket.org/softvisio/redis/issues",
+        "url": "https://github.com/softvisio/redis/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/softvisio/redis.git"
+        "url": "https://github.com/softvisio/redis.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
