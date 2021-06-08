@@ -1,76 +1,78 @@
-## 1.2.9 (2021-06-01)
+# Changelog
 
-**Raw commits log**
+### 1.2.9 (2021-06-01)
+
+Changed:
 
 -   lint config removed;
 
-## 1.2.8 (2021-05-19)
+### 1.2.8 (2021-05-19)
 
-**Raw commits log**
+Changed:
 
 -   lint script removed;
 
-## 1.2.7 (2021-05-13)
+### 1.2.7 (2021-05-13)
 
-**Raw commits log**
+Changed:
 
 -   env mode accessors added;
 -   env read -> readConfig;
 -   env read -> readConfigs;
 -   imports updated;
 
-## 1.2.6 (2021-05-02)
+### 1.2.6 (2021-05-02)
 
-**Raw commits log**
+Changed:
 
 -   deps updated;
 
-## 1.2.5 (2021-04-17)
+### 1.2.5 (2021-04-17)
 
-**Raw commits log**
+Changed:
 
 -   ported to modules;
 
-## 1.2.4 (2021-03-31)
+### 1.2.4 (2021-03-31)
 
-**Raw commits log**
+Changed:
 
 -   lint pattern updated;
 
-## 1.2.3 (2021-03-15)
+### 1.2.3 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   package renamed;
 
-## 1.2.2 (2021-03-15)
+### 1.2.2 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   docker tags updated;
 
-## 1.2.1 (2021-03-15)
+### 1.2.1 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   image tag removed;
 
-## 1.2.0 (2021-03-15)
+### 1.2.0 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   redis config added;
 
-## 1.1.0 (2021-03-15)
+### 1.1.0 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   package renamed;
 -   config files renamed;
 -   shared memory fix;
 
-## 1.0.0 (2021-03-14)
+### 1.0.0 (2021-03-14)
 
-**Raw commits log**
+Changed:
 
 -   init;
