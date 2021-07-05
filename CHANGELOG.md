@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.3.1 (2021-07-05)
+
+Fixed:
+
+-   docs updated
+-   docker do not publish ports on production
+
 ### 1.3.0 (2021-06-24)
 
 Changed:
