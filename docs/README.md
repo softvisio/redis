@@ -1,13 +1,15 @@
 # Introduction
 
-<!-- Tell about the project -->
+Redis service for docker swarm.
 
 ## Install
 
+Use `docker-stack.yaml` and `.config.yaml` files, provided in this repository.
+
 ```shell
-npm i @applications/redis
+# mark node for deployment
+docker node update --label-add redis=true <NODE-NAME>
+
+# deploy
+docker stack deploy --with-registry-auth -c docker-stack.yaml redis
 ```
-
-## Usage
-
-<!-- Tell about how to use the project, give code examples -->
