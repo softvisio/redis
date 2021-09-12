@@ -2,7 +2,7 @@
     "name": "@applications/redis",
     "version": "1.3.5",
     "private": true,
-    "description": "Redis wrapper",
+    "description": "Redis service",
     "keywords": [
         "softvisio",
         "redis"
