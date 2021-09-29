@@ -19,7 +19,7 @@ services:
           - "node.labels.redis == true"
 
     configs:
-      - { source: .config.local.yaml, target: /var/local/package/.config.local.yaml }
+      - { source: env.local.yaml, target: /var/local/package/env.local.yaml }
 
     networks: [private]
 
@@ -34,7 +34,7 @@ services:
       context: .
 
 configs:
-  .config.local.yaml: { file: .config.local.yaml }
+  env.local.yaml: { file: env.local.yaml }
 
 networks:
   private: { external: true }
