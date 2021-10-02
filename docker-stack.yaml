@@ -7,7 +7,7 @@ version: "3.9"
 
 services:
   redis:
-    image: softvisio/redis
+    image: zerocluster/redis
     init: true
     stop_grace_period: 5m
 
