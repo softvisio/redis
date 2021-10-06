@@ -24,6 +24,6 @@
         "#index": "./lib/index.js"
     },
     "dependencies": {
-        "@softvisio/core": "^5.0.0"
+        "@softvisio/core": "^6.0.0"
     }
 }
